@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI Hesaplayıcı</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Hesaplayıcı</h1>
+        <label for="height">Boy:</label>
+        <div class="input-group">
+            <input type="number" id="height" placeholder="Boyunuzu girin" required>
+            <span class="unit">cm</span>
+        </div>
+
+        <label for="weight">Kilo:</label>
+        <div class="input-group">
+            <input type="number" id="weight" placeholder="Kilonuzu girin" required>
+            <span class="unit">kg</span>
+        </div>
+
+        <button onclick="calculateBMI()">BMI Hesapla</button>
+        <button onclick="resetForm()">Sıfırla</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
